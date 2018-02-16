@@ -22,18 +22,18 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         
         yelpTableView.rowHeight = UITableViewAutomaticDimension
         yelpTableView.estimatedRowHeight = 330
+       
+       // Search Bar in Navigation Bar
+        let searchController = UISearchController(searchResultsController: nil)
+    
+        searchController.searchBar.sizeToFit()
+        navigationItem.titleView = searchController.searchBar
         
+       // Defalt Thai Search
         Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
             self.yelpTableView.reloadData()
-//            if let businesses = businesses {
-//                for business in businesses {
-//                    print(business.name!)
-//                    print(business.address!)
-//                }
-//            }
-            
             }
         )
         

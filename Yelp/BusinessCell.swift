@@ -40,8 +40,16 @@ class BusinessCell: UITableViewCell {
             
             itemImageView.layer.cornerRadius = 5
             itemImageView.clipsToBounds = true
-        }        
+        }
         
+        titleLabel.preferredMaxLayoutWidth = titleLabel.frame.size.width
+        
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        titleLabel.preferredMaxLayoutWidth = titleLabel.frame.size.width
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

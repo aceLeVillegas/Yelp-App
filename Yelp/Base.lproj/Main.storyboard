@@ -113,6 +113,7 @@
                                             <outlet property="reviewsLabel" destination="gTC-Y6-99q" id="Yv4-6D-Vuw"/>
                                             <outlet property="starsImageView" destination="dzH-LH-dr7" id="eQq-IS-zaw"/>
                                             <outlet property="titleLabel" destination="ssD-a6-IKE" id="vEu-yk-Acg"/>
+                                            <segue destination="VBf-nY-7GX" kind="show" id="ysJ-ip-GAp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -135,14 +136,51 @@
             </objects>
             <point key="canvasLocation" x="2344.8000000000002" y="357.57121439280365"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="47h-uh-9kt">
+            <objects>
+                <viewController id="VBf-nY-7GX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iwA-Qa-tBd"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFi-EQ-mpU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bn5-6o-Umx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-um-0eJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UiV-fb-bh7">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UiV-fb-bh7" id="UPO-OD-WyQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZE-K4-Qh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3245.5999999999999" y="357.57121439280365"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZX1-F4-y2I">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUO-T5-ez6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvM-bW-hC9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="dvM-bW-hC9">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.97575455904006958" green="0.01712891086935997" blue="0.050954170525074005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

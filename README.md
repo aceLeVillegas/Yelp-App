@@ -1,20 +1,20 @@
 # Project 3 - Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **X** hours spent in total
+Time spent: 6 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] Table rows for search results should be dynamic height according to the content height. (3pt)
-- [ ] Custom cells should have the proper Auto Layout constraints. (+5pt)
-- [ ] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). (+2pt)
+- [X] Table rows for search results should be dynamic height according to the content height. (3pt)
+- [X] Custom cells should have the proper Auto Layout constraints. (+5pt)
+- [X] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). (+2pt)
 
 The following **stretch** features are implemented:
 
 - [ ] Infinite scroll for restaurant results. (+3pt)
 - [ ] Implement map view of restaurant results. (+3pt)
-- [ ] Implement the restaurant detail page. (+2pt)
+- [X] Implement the restaurant detail page. (+2pt)
 
 The following **additional** features are implemented:
 
@@ -22,8 +22,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Discuss the different ways to make an API Call because the first assignment did an API call in the view controller then in this assignment it was seperated in a differnt file using a differnt library to make the API call. 
+2. Discuss the types of functions that were used in the YelpClient file. 
 
 ## Video Walkthrough
 
@@ -36,11 +36,12 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+I spent a good majority of my time trying to make an additional API call to make the details page however without success. I will have to revisit this project to correct my errors with details view page.  
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
-
+    Copyright 2018 Sarah Villegas 
+    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
